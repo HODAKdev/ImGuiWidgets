@@ -1,4 +1,8 @@
-   void DrawBoundingBox(const float* view, const float* projection, const float* matrix, const float* min, const float* max)
+   void DrawBoundingBox(const float* view,
+                        const float* projection,
+                        const float* matrix,
+                        const float* min,
+                        const float* max)
    {
        matrix_t viewProjection = *(matrix_t*)view * *(matrix_t*)projection;
        vec_t frustum[6];
@@ -86,7 +90,14 @@
        }
    }
 
-   void DrawPerspectiveFrustum(const float* view, const float* projection, const float* matrix, const float NearZ, const float FarZ, const float width, const float height, const float fov)
+   void DrawPerspectiveFrustum(const float* view,
+                               const float* projection,
+                               const float* matrix,
+                               const float NearZ,
+                               const float FarZ,
+                               const float width,
+                               const float height,
+                               const float fov)
    {
        matrix_t viewProjection = *(matrix_t*)view * *(matrix_t*)projection;
        vec_t frustum[6];
@@ -199,7 +210,13 @@
        }
    }
 
-   void DrawOrthographicFrustum(const float* view, const float* projection, const float* matrix, const float NearZ, const float FarZ, const float width, const float height)
+   void DrawOrthographicFrustum(const float* view,
+                                const float* projection,
+                                const float* matrix,
+                                const float NearZ,
+                                const float FarZ,
+                                const float width,
+                                const float height)
    {
        matrix_t viewProjection = *(matrix_t*)view * *(matrix_t*)projection;
        vec_t frustum[6];
