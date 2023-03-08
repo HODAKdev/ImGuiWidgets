@@ -1,8 +1,8 @@
-   void DrawBoundingBox(const float* view,
-                        const float* projection,
-                        const float* matrix,
-                        const float* min,
-                        const float* max)
+   void DrawBoundingBox(const float* _View,
+                        const float* _Projection,
+                        const float* _Matrix,
+                        const float* _Min,
+                        const float* _Max)
    {
        matrix_t viewProjection = *(matrix_t*)view * *(matrix_t*)projection;
        vec_t frustum[6];
@@ -90,14 +90,14 @@
        }
    }
 
-   void DrawPerspectiveFrustum(const float* view,
-                               const float* projection,
-                               const float* matrix,
-                               const float NearZ,
-                               const float FarZ,
-                               const float width,
-                               const float height,
-                               const float fov)
+   void DrawPerspectiveFrustum(const float* _View,
+                               const float* _Projection,
+                               const float* _Matrix,
+                               const float _Near,
+                               const float _Far,
+                               const float _Width,
+                               const float _Height,
+                               const float _Fov)
    {
        matrix_t viewProjection = *(matrix_t*)view * *(matrix_t*)projection;
        vec_t frustum[6];
@@ -210,13 +210,13 @@
        }
    }
 
-   void DrawOrthographicFrustum(const float* view,
-                                const float* projection,
-                                const float* matrix,
-                                const float NearZ,
-                                const float FarZ,
-                                const float width,
-                                const float height)
+   void DrawOrthographicFrustum(const float* _View,
+                                const float* _Projection,
+                                const float* _Matrix,
+                                const float _Near,
+                                const float _Far,
+                                const float _Width,
+                                const float _Height)
    {
        matrix_t viewProjection = *(matrix_t*)view * *(matrix_t*)projection;
        vec_t frustum[6];
