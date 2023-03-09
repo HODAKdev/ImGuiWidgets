@@ -111,7 +111,6 @@
 
        float Hnear = 2 * tan((_Fov * DEG2RAD) / 2) * _Near;
        float Wnear = Hnear * _Width / _Height;
-
        float Hfar = 2 * tan((_Fov * DEG2RAD) / 2) * _Far;
        float Wfar = Hfar * _Width / _Height;
 
