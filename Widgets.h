@@ -20,14 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-   IMGUI_API void DrawBoundingBox(
-       const float* _View,
-       const float* _Projection,
-       const float* _Matrix,
-       const float* _Min,
-       const float* _Max);
-   IMGUI_API void DrawPerspectiveFrustum(
-       const float* _View,
+IMGUI_API void DrawBoundingBox(
+   const float* _View,
+   const float* _Projection,
+   const float* _Matrix,
+   const float* _Min,
+   const float* _Max);
+IMGUI_API void DrawPerspectiveFrustum(
+      const float* _View,
        const float* _Projection,
        const float* _Matrix,
        const float _Near,
