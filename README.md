@@ -5,7 +5,7 @@ This library provides a collection of visualization widgets for your project!
 ### Bounding Box Widget
 ![](/images/img1.png)
 ### Perspective Frustum Widget
-![](/images/image2.png)
+![](/images/img2.png)
 ### Orthographic Frustum Widget
 ## Example
 ```cpp
