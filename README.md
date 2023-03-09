@@ -43,9 +43,8 @@ ImGuizmo::DrawOrthographicFrustum(
   _Far,
   _Width,
   _Height);
-}
 ```
 ## Install
-Just copy Widgets.hpp code to ImGuizmo.h & Widgets.cpp code to ImGuizmo.cpp.
+Just copy [Widgets.h](/Widgets.h) to [ImGuizmo.h](https://github.com/CedricGuillemet/ImGuizmo/blob/master/ImGuizmo.h) and [Widgets.cpp](/Widgets.cpp) to [ImGuizmo.cpp](https://github.com/CedricGuillemet/ImGuizmo/blob/master/ImGuizmo.cpp).
 ## License
 ImGuiWidgets is licensed under the MIT License, see [LICENSE](/LICENSE) for more information.
