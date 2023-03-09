@@ -20,12 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-   void DrawBoundingBox(
-       const float* _View,
-       const float* _Projection,
-       const float* _Matrix,
-       const float* _Min,
-       const float* _Max)
+void DrawBoundingBox(
+    const float* _View,
+    const float* _Projection,
+    const float* _Matrix,
+    const float* _Min,
+    const float* _Max)
    {
        matrix_t viewProjection = *(matrix_t*)_View * *(matrix_t*)_Projection;
        vec_t frustum[6];
