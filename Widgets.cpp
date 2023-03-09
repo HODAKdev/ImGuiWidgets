@@ -238,7 +238,7 @@ void DrawPerspectiveFrustum(
        }
    }
 
-    void DrawOrthographicFrustum(
+void DrawOrthographicFrustum(
     const float* _View,
     const float* _Projection,
     const float* _Matrix,
