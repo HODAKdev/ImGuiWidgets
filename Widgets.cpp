@@ -26,7 +26,7 @@ void DrawBoundingBox(
     const float* _Matrix,
     const float* _Min,
     const float* _Max)
-   {
+    {
        matrix_t viewProjection = *(matrix_t*)_View * *(matrix_t*)_Projection;
        vec_t frustum[6];
        ComputeFrustumPlanes(frustum, viewProjection.m16);
@@ -113,16 +113,16 @@ void DrawBoundingBox(
        }
    }
 
-   void DrawPerspectiveFrustum(
-       const float* _View,
-       const float* _Projection,
-       const float* _Matrix,
-       const float _Near,
-       const float _Far,
-       const float _Width,
-       const float _Height,
-       const float _Fov)
-   {
+void DrawPerspectiveFrustum(
+    const float* _View,
+    const float* _Projection,
+    const float* _Matrix,
+    const float _Near,
+    const float _Far,
+    const float _Width,
+    const float _Height,
+    const float _Fov)
+    {
        matrix_t viewProjection = *(matrix_t*)_View * *(matrix_t*)_Projection;
        vec_t frustum[6];
        ComputeFrustumPlanes(frustum, viewProjection.m16);
@@ -238,15 +238,15 @@ void DrawBoundingBox(
        }
    }
 
-   void DrawOrthographicFrustum(
-       const float* _View,
-       const float* _Projection,
-       const float* _Matrix,
-       const float _Near,
-       const float _Far,
-       const float _Width,
-       const float _Height)
-   {
+    void DrawOrthographicFrustum(
+    const float* _View,
+    const float* _Projection,
+    const float* _Matrix,
+    const float _Near,
+    const float _Far,
+    const float _Width,
+    const float _Height)
+    {
        matrix_t viewProjection = *(matrix_t*)_View * *(matrix_t*)_Projection;
        vec_t frustum[6];
        ComputeFrustumPlanes(frustum, viewProjection.m16);
