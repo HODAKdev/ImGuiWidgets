@@ -131,9 +131,9 @@ void DrawPerspectiveFrustum(
        float thickness = 2.f;
        ImU32 col = IM_COL32(0xE2, 0x52, 0x52, 0xFF);
 
-       float Hnear = 2 * tan((_Fov * DEG2RAD) / 2) * _Near;
+       float Hnear = 2 * (float)tan((_Fov * DEG2RAD) / 2) * _Near;
        float Wnear = Hnear * _Width / _Height;
-       float Hfar = 2 * tan((_Fov * DEG2RAD) / 2) * _Far;
+       float Hfar = 2 * (float)tan((_Fov * DEG2RAD) / 2) * _Far;
        float Wfar = Hfar * _Width / _Height;
 
        vec_t camSpacePosition;
